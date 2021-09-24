@@ -51,7 +51,7 @@ if __name__ == '__main__':
                 category = class_names.index(a[0])
 
                 b_box = a[4:8]
-                new_line = ' ' + ','.join([str(n) for n in b_box]) + ',' + str(category)
+                new_line = ' ' + ','.join([str(int(float(n))) for n in b_box]) + ',' + str(category)
                 list_file.write(new_line)
         list_file.write('\n')
 
